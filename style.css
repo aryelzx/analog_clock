@@ -1,0 +1,132 @@
+:root {
+    --main-bg-color: #1e1f26;
+    --main-text-color: #1e1f26;
+
+}
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100vh;
+    font-size: 16px;
+    transition: all ease 0.2s;
+    margin-left: 25%;
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+h1{
+    display: flex;
+    margin-bottom: 640px;
+    color: #f5f5f5;
+    position: fixed;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    
+    
+}
+section{
+    background-image: url('https://source.unsplash.com/random?beach/600/400');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding:15px;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    background-position: center;
+    
+}
+.clock{
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: url("./img/clock.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border:3px solid var(--main-text-color);
+    transition: all ease 0.2s;
+    box-shadow: rgba(0,0,0, .24) 0px 5px 8px;
+    
+}
+.clock:before{
+    content: "";
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: var(--main-text-color);
+    border: 2px solid var(--main-text-color);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1000;
+    transition: all ease 0.2s;
+}
+.hour, .min, .sec{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius:50%;
+}
+.hour{
+    height: 10em;
+    width: 10em;
+}
+.hour:before{
+    content:"";
+    position:absolute;
+    height: 50%;
+    width: 6px;
+    background-color: var(--main-text-color);
+    border-radius:6px;
+}
+.min{
+    height: 15em;
+    width: 12em;
+
+}
+.min:before{
+    content:"";
+    height: 50%;
+    width: 6px;
+    background-color: var(--main-text-color);
+    border-radius:4px;
+}
+.sec{
+    height: 13em;
+    width: 13em;
+}
+.sec:before{
+    content:"";
+    height: 60%;
+    width: 2px;
+    background-color: #1e1f26;
+    border-radius: 2px;
+}
+footer{
+    text-align: center;
+    color:#f5f5f5;
+    font-style: italic;
+    margin-top:565px;
+    font-size: 20px;
+    position: fixed;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
